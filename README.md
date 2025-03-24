@@ -1,6 +1,8 @@
-# Secure API for Data Fetching
+# Secure Data Fetching Script
 
 A Python script that securely fetches weather data from the OpenWeatherMap API, processes it, and displays the results.
+
+By Nkunja Denis as a test for Senior Developer role
 
 ## Features
 
@@ -40,7 +42,7 @@ A Python script that securely fetches weather data from the OpenWeatherMap API, 
      OPENWEATHER_URL=https://api.openweathermap.org/data/2.5/weather
      ```
 
-## Usage
+## Running
 
 Run the script from the command line:
 
@@ -61,26 +63,3 @@ Run the unit tests with:
 ```
 python -m unittest test_api.py
 ```
-
-## Dependencies
-
-- requests: For making HTTP requests
-- python-dotenv: For loading environment variables from .env file
-- logging: For logging events and errors
-- unittest: For unit testing
-
-## Security Considerations
-
-- API keys are stored in a `.env` file which is not committed to version control
-- Error handling prevents sensitive information from being exposed in error messages
-- Input validation helps prevent potential injection attacks
-- All external communications use HTTPS
-- Error details are logged safely without exposing sensitive data
-
-## Project Structure
-
-- `main.py`: Main script containing the WeatherAPI class and utility functions
-- `test_api.py`: Unit tests for all components
-- `.env.example`: Template for environment variables
-- `.gitignore`: Configured to ignore .env file and other sensitive/unnecessary files
-- `requirements.txt`: List of Python package dependencies

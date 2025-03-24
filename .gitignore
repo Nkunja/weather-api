@@ -1,0 +1,15 @@
+.qodo
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+.venv/
+__pycache__/
+venv-*
+*.pyc
+
+# Files
+app.log
+test_weather_data.json
+weather_data.json

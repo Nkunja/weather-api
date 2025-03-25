@@ -5,7 +5,6 @@ import json
 import sys
 import io
 import requests
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from main import WeatherAPI, save_to_file, display_weather
 
 class TestWeatherAPI(unittest.TestCase):
@@ -101,10 +100,6 @@ class TestWeatherAPI(unittest.TestCase):
         """Test saving data to file."""
         test_filename = "test_weather_data.json"
         processed_data = {"location": "Test City", "temperature": 20}
-        
-        print(f"Current working directory: {os.getcwd()}")
-        print(f"__file__ location: {__file__}")
-        print(f"main module location: {sys.modules.get('main').__file__ if 'main' in sys.modules else 'Not found'}")
         
         # Test saving
         success = save_to_file(processed_data, test_filename)

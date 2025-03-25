@@ -1,8 +1,8 @@
-# Secure Data Fetching Script
+# Secure Data Fetching API
 
-A Python script that securely fetches weather data from the OpenWeatherMap API, processes it, and displays the results.
+This is a Python project by Nkunja Denis as a test for Senior Python Developer role at Shift Security. 
+It contains a python script that securely fetches weather data from the OpenWeatherMap API, processes it, and displays the results as well as unit tests for the same.
 
-By Nkunja Denis as a test for Senior Developer role
 
 ## Features
 
@@ -21,10 +21,11 @@ By Nkunja Denis as a test for Senior Developer role
    cd weather-api
    ```
 
-2. Create a virtual environment (recommended):
+2. Create a virtual environment :
    ```
    python -m venv venv
-   source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+   source venv/bin/activate  # On unix platforms
+   venv\Scripts\activate     # On Windows
    ```
 
 3. Install dependencies:
@@ -48,6 +49,8 @@ Run the script from the command line:
 
 ```
 python3 main.py
+or
+python main.py
 ```
 
 The script will:
@@ -63,3 +66,6 @@ Run the unit tests with:
 ```
 python -m unittest test_api.py
 ```
+
+
+Thank you

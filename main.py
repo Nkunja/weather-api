@@ -172,11 +172,11 @@ def main():
             # Save data to file
             save_to_file(processed_data)
         else:
-            print("Failed to fetch weather data. Check the logs for details.")
+            print("Failed to fetch weather data. Check the app.log file for details.")
     
     except Exception as e:
         logger.error(f"An unexpected error occurred: {e}")
-        print("An error occurred while running the program. Check the logs for details.")
+        print("An error occurred while running the program. Check the app.log file for details.")
 
 if __name__ == "__main__":
     main()

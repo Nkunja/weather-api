@@ -59,6 +59,11 @@ The script will:
 3. Display the weather information in a readable format
 4. Save the data to a JSON file
 
+## Files Created
+After Running the script, these files will be created in your project folder
+- `weather_data.json`: contains the current weather data for the city entered
+- `app.log`: contains any error messages and logs from the application
+
 ## Running Tests
 
 Run the unit tests with:
